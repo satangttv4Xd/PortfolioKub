@@ -120,7 +120,7 @@ body {
 .cta-button{
     display: inline-block;
     padding: 1rem 2rem;
-    background: linear-gradient(45deg, var(--accent), #2ecc71);
+    background: linear-gradient(45deg, var(--accent), #d672bd);
     color: white;
     border-radius: 8px;
     text-decoration: none;
