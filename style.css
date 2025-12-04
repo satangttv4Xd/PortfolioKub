@@ -24,7 +24,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    padding: 1.5rem 5%;
+    padding: 1rem 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -34,22 +34,22 @@ body {
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 .logo{
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: var(--accent);
     text-decoration: none;
     position: relative;
-    padding-left: 2.5rem;
 
 }
-.navbar{
+.nav-links{
     display: flex;
-    gap: 2rem;
+    gap: 2.5rem;
     list-style: none;
 }
 .nav-links a {
     color: var(--text);
     text-decoration: none;
+    font-size: 1rem;
     font-weight: 500;
     transition: all 0.3s ease;
     position: relative;
@@ -185,21 +185,23 @@ footer{
         text-align: center;
         padding-top: 8rem;
     }
+    
+    .hero-content{
+        padding-right: 0;
+        margin-bottom: 3rem;
+    }
 
-}
-.hero-content{
-    padding-right: 0;
-    margin-bottom: 3rem;
-}
-.profile-img{
-    width: 280px;
-    height: 280px;
-}
-.nav-links{
-    display: none;
-}
-.logo{
-    font-size: 1.5rem;
-    padding-left: 2rem;
+    .profile-img{
+        width: 280px;
+        height: 280px;
+    }
 
+    .nav-links{
+        display: none;
+    }
+
+    .logo{
+        font-size: 1.5rem;
+        padding-left: 2rem;
+    }
 }
