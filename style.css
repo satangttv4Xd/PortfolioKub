@@ -132,13 +132,24 @@ body {
 .skills{
     padding: 5rem 5%;
     background: var(--darker-bg);
+    overflow: hidden;
+    z-index: 99999;
 
 }
 .skills-grid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
+    /* width: 100%; */
     margin-top: 3rem;
+    overflow: hidden;
+    /* position: relative; */
+}
+.skills-track {
+    display: flex;
+    gap: 2rem;
+    width: max-content;
+    animation: scroll 25s linear infinite;
 }
 .skills-card{
     padding: 2rem;
@@ -149,7 +160,7 @@ body {
     backdrop-filter: blur(5px);
 }
 .skills-card:hover{
-    transform: translateY(-10px);
+    transform: translateY(1px);
     border-color: var(--accent);
     box-shadow: 0 10px 30px var(--accent-glow);
 }
@@ -208,12 +219,33 @@ footer{
 
 
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
 }
 
 .skills-grid {
     animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
+}
+
+#header-typing{
+    font-size: 3rem;
+}
+
+.cursor {
+    color: #ffffff;
+    display: inline-block;
+    margin-left: 4px;
+    animation: blink 1s infinite;
+}
+
+#header-typing {
+    font-size: 3rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff5fa2, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
 }
